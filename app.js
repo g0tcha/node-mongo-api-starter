@@ -4,9 +4,10 @@ let app = express();
 let bodyParser = require('body-parser');
 let mongoose = require('mongoose');
 let bcrypt = require('bcrypt');
+let config = require('./config.json');
 var SALT_WORK_FACTOR = 10;
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || config.app.port;
 
 // Models.
 var User = require('./app/models/user');
@@ -15,7 +16,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 // MongoDB connection.
-let dataBaseURL = 'mongodb://127.0.0.1:27017/saycheese';
+let dataBaseURL = 'mongodb://127.0.0.1:'+config.mongo.port+'/'+config.mongo.database;
 mongoose.connect(dataBaseURL, function(err) {
   if(err) throw err;
   console.log('Successfully connected to MongoDB');

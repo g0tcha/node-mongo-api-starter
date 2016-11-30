@@ -1,0 +1,9 @@
+{
+  "app": {
+    "port": "3000"
+  },
+  "mongo": {
+    "port": "27017",
+    "database": "saycheese"
+  }
+}

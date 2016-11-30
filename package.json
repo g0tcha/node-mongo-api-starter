@@ -1,7 +1,7 @@
 {
-  "name": "project-name",
+  "name": "saycheese-api",
   "version": "1.0.0",
-  "description": "Project Name",
+  "description": "Say Cheese API",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
