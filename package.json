@@ -1,12 +1,12 @@
 {
-  "name": "saycheese-api",
+  "name": "your-project-title",
   "version": "1.0.0",
-  "description": "Say Cheese API",
+  "description": "Your Project",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Vincent Grossier",
+  "author": "Your team",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^0.8.7",
